@@ -11,5 +11,10 @@ pipeline {
                 sh 'node -v' 
             }
         }
+        stage('End') { 
+            steps {
+                sh 'echo "Hello World!"' 
+            }
+        }
     }
 }
